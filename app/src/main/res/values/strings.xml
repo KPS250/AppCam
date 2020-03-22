@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">AppCam</string>
+    <string name="action_settings">Settings</string>
+    <string name="name">Name</string>
+    <string name="timestamp">Timestamp</string>
+    <string name="latitude">Latitude</string>
+    <string name="longitude">Longitude</string>
+    <string name="path">Path</string>
+    <string name="sortBy">Sort By</string>
+    <string name="size">Size</string>
+    <string name="emptyTitle">No Photos Found</string>
+    <string name="emptyDesc">Photos captured will be listed here</string>
+    <string name="turnOnLoc">Turn on Location</string>
+    <string name="locNotFound">Location not found</string>
+    <string name="permissionDenied">Permission Denied</string>
+    <string name="locFound">Location Found</string>
+    <string name="title_activity_maps">Map</string>
+</resources>

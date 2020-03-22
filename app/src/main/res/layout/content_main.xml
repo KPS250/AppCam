@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    android:id="@+id/photoList"
+    tools:showIn="@layout/activity_main">
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/radioGroup"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="16dp"
+        android:background="@color/colorPrimaryDark"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sortBy"
+            android:textColor="@color/white"
+            android:paddingRight="30dp"
+            tools:ignore="MissingConstraints">
+        </TextView>
+
+        <RadioButton
+            android:id="@+id/sortName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/name"
+            android:paddingRight="20dp"
+            android:textColor="@color/white"
+            android:onClick="onRadioButtonClicked"
+            android:checked="true" />
+
+        <RadioButton
+            android:id="@+id/sortTimestamp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/size"
+            android:textColor="@color/white"
+            android:onClick="onRadioButtonClicked"
+            android:checked="false" />
+    </RadioGroup>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview_images"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        app:spanCount="2"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
